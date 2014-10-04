@@ -9,9 +9,20 @@
 
 
 <div class="awesome-box col-xs-6 col-xs-offset-3 text-center">
+	<br>
+	<br>
+	<br>
 	<%= simple_form_for @quote do |f| %>
  	 <%= f.input :saying %>
   	 <%= f.input :author %>
-  	 <%= f.button :submit %> <%= link_to 'Home', root_path, :class => 'btn btn-success' %>
+  	 <br>
+  	 <%= f.button :submit %> 
+  	 <br>
+  	 <br>
+  	 <%= link_to 'Home', root_path, :class => 'btn btn-info' %>
+	 <%= link_to 'Get Advice', quotes_path, :class => 'btn btn-success' %>
 	<% end %>
+	<br>
+	<br>
+	<br>
 </div>
